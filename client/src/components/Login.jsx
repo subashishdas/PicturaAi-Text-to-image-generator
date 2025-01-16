@@ -24,7 +24,7 @@ const Login = ({ onClose }) => {
     try {
       // Send a POST request to the backend API for Login
       if (formType === "Login") {
-        const { data } = await axios.post(backendUrl + "api/user/login", {
+        const { data } = await axios.post(backendUrl + "/api/user/login", {
           email,
           password,
         });
