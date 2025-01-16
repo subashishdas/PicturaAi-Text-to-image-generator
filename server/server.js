@@ -26,8 +26,8 @@ app.use(express.json());
 connectDB().catch(console.error);
 
 // Routes
-app.use("/api/user", userRouter);
-app.use("/api/image", imageRouter);
+app.use("api/user", userRouter);
+app.use("api/image", imageRouter);
 
 // Health check route
 app.get("/", (req, res) => res.send("Api Working"));
